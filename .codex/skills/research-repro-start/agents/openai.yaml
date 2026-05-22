@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Repro Start"
+  short_description: "Gate reproduction work behind a repro-* OpenSpec change"
+  default_prompt: "Start or restore a reproduction task for this project. Enforce the repro gate, make sure a matching repro-* change exists with proposal, design, tasks, and session-log, then tell me the first next action."

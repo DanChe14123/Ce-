@@ -1,0 +1,19 @@
+﻿{
+    "project_name":  "Ce³⁺ 荧光粉激发带位置预测复现",
+    "project_type":  "research",
+    "project_root":  "C:\\PKU\\Term2\\Project\\Ce³⁺ 荧光粉激发带位置预测复现",
+    "project_memory_id":  "ce3-63aa6e88",
+    "memory_policy":  {
+                          "backend":  "mem0",
+                          "read_triggers":  [
+                                                "new long-running task",
+                                                "resume paused work",
+                                                "high-risk design or writing"
+                                            ],
+                          "write_triggers":  [
+                                                 "explicitly confirmed stable fact",
+                                                 "approved [memory-candidate] from session-checkpoint"
+                                             ],
+                          "stable_fact_only":  true
+                      }
+}

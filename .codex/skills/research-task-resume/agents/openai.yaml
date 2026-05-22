@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Task Resume"
+  short_description: "Restore long-task state from AGENTS and OpenSpec before work resumes"
+  default_prompt: "Resume the active long-running task for this project by reading the project AGENTS, active OpenSpec change, and session log, then tell me the first next action."

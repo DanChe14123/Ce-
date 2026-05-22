@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Memory Write"
+  short_description: "Store, update, or delete stable project facts in Mem0"
+  default_prompt: "Write, update, or delete a stable project fact in the current project's Mem0-backed memory only if it is durable, evidence-backed, reusable across future threads, and explicitly approved for retention."

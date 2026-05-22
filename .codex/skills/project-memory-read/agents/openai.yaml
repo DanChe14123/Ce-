@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Memory Read"
+  short_description: "Recover stable project facts from Mem0 before new work starts"
+  default_prompt: "Read the current project's stable Mem0-backed memory before new reasoning starts, then summarize only the relevant facts and the first next action."

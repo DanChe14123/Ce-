@@ -1,0 +1,84 @@
+# OS / editor noise
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+ENV/
+
+# Logs and local run artifacts
+*.log
+logs/
+tmp/
+temp/
+.cache/
+
+# Local prompt scratch / encoding-damaged handoff notes
+notes/ce3-leader-prompt.md
+
+# Secrets and machine-local config
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.token
+
+# Large or reproducible research artifacts
+data/cache/
+data/interim/
+data/raw/downloads/
+data/raw/vendor/
+data/processed/generated/
+models/
+checkpoints/
+artifacts/
+runs/
+wandb/
+mlruns/
+
+# Heavy numeric / model artifact formats should be explicitly opted in
+*.pkl
+*.pickle
+*.joblib
+*.pt
+*.pth
+*.onnx
+*.h5
+*.hdf5
+*.npy
+*.npz
+*.parquet
+*.feather
+
+# Generated reports and exports
+results/figures/generated/
+results/tables/generated/
+manuscript/build/
+manuscript/*.aux
+manuscript/*.bbl
+manuscript/*.blg
+manuscript/*.fdb_latexmk
+manuscript/*.fls
+manuscript/*.out
+manuscript/*.synctex.gz
+
+# Codex / local automation scratch, while keeping project skills and manifest trackable
+.codex/tmp/
+.codex/cache/
+.codex/logs/
