@@ -1,0 +1,8 @@
+check,value,detail
+rows,357,Total public processed 5d1 rows in original RFE44 sheet.
+unique_compositions,330,LeaveOneGroupOut uses this many composition groups.
+duplicated_full_rows,0,Full duplicate rows in processed table.
+duplicated_composition_groups,25,Composition groups with more than one row; LOGO keeps each group in one fold.
+duplicated_composition_rows,52,Rows covered by duplicated composition groups.
+source_aware_split_auditable,0,Not auditable because DOI/year/source/in-house flags are absent from workbook.
+frozen_auxiliary_features,1,Predicted CS/RP are present as frozen released features.

@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Training_Set_for_5d1.xlsx",
+    "url": "https://raw.githubusercontent.com/NL0119/Ce_5d1_Prediction/original/Training_Set_for_5d1.xlsx",
+    "required": true,
+    "release": "NL0119/Ce_5d1_Prediction@original",
+    "commit": "49991b75572dd3bf9ac4e5daa6000ac364b39b2d",
+    "local_path": "data\\raw\\ce_5d1_prediction\\original\\Training_Set_for_5d1.xlsx",
+    "byte_size": 141864,
+    "sha256": "4a28098c346800b2f0d2ced9618be13086c0287d0aceffc94e4a2d93470435fe"
+  },
+  {
+    "name": "5d1Ce Prediction Model.ipynb",
+    "url": "https://raw.githubusercontent.com/NL0119/Ce_5d1_Prediction/original/5d1Ce%20Prediction%20Model.ipynb",
+    "required": true,
+    "release": "NL0119/Ce_5d1_Prediction@original",
+    "commit": "49991b75572dd3bf9ac4e5daa6000ac364b39b2d",
+    "local_path": "data\\raw\\ce_5d1_prediction\\original\\5d1Ce Prediction Model.ipynb",
+    "byte_size": 35779,
+    "sha256": "0b776ff9f9064de448879aad2f43b659b8b1dece23ead5c1099d8e598cd03d94"
+  },
+  {
+    "name": "README.md",
+    "url": "https://raw.githubusercontent.com/NL0119/Ce_5d1_Prediction/original/README.md",
+    "required": true,
+    "release": "NL0119/Ce_5d1_Prediction@original",
+    "commit": "49991b75572dd3bf9ac4e5daa6000ac364b39b2d",
+    "local_path": "data\\raw\\ce_5d1_prediction\\original\\README.md",
+    "byte_size": 823,
+    "sha256": "d842eca8d190ab7222c971e86b9c24520ac3bec9f25b80a5bd059b646a6210df"
+  }
+]
