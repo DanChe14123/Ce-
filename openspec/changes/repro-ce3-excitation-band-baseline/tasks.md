@@ -28,4 +28,13 @@
 
 - [x] 5.1 Record first-phase findings in `session-log.md`.
 - [x] 5.2 Decide whether worker threads are needed after core source triage.
-- [ ] 5.3 Produce the first leader checkpoint with evidence-backed conclusions, blockers, and first next action.
+- [x] 5.3 Produce the first leader checkpoint with evidence-backed conclusions, blockers, and first next action.
+
+## 6. Worker Result Integration
+
+- [x] 6.1 Store literature/provenance worker feedback.
+- [x] 6.2 Store data-table audit worker feedback.
+- [x] 6.3 Integrate worker findings into the main source-audit note and session log.
+- [x] 6.4 Verify Zenodo DOI/DataCite metadata and trace the record to the related GitHub `original` tag; document that direct Zenodo file payload/checksum routes remain 403 from this machine.
+- [x] 6.5 Compare the Zenodo-linked 357-row `original` table against later GitHub `main` and resolve the 357-vs-358 mismatch as release/version drift.
+- [x] 6.6 Complete read-only modeling/code audit before any model training.
