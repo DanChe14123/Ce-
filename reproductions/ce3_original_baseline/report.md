@@ -51,3 +51,8 @@ Notebook-saved 5d1 LOGO output from the original notebook reported `avg_mae=0.15
 ## Experiment Hypothesis
 
 - The remaining metric gap between notebook-saved values and this deterministic CPU rerun may come from XGBoost version, CPU/GPU behavior, and/or the notebook's missing explicit estimator seed. This has not yet been isolated by ablation.
+
+## Follow-Up Audit
+
+- Metric-gap controls are recorded in `reproductions/ce3_original_metric_gap/report.md`.
+- The closest local rerun to the notebook-saved metrics was CPU unseeded/default, not the deterministic `random_state=42` rerun. It produced fold-mean MAE `0.154993` eV versus notebook-saved `0.153388` eV.

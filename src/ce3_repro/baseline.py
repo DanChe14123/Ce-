@@ -52,11 +52,13 @@ def _fold_metric_row(
     return row
 
 
-def _make_model(seed: int | None, device: str) -> XGBRegressor:
+def _make_model(seed: int | None, device: str, n_jobs: int | None = None) -> XGBRegressor:
     params = dict(ORIGINAL_5D1_PARAMS)
     params["device"] = device
     if seed is not None:
         params["random_state"] = seed
+    if n_jobs is not None:
+        params["n_jobs"] = n_jobs
     return XGBRegressor(**params)
 
 
@@ -64,6 +66,7 @@ def run_logo_baseline(
     df: pd.DataFrame,
     seed: int | None = 42,
     device: str = "cpu",
+    n_jobs: int | None = None,
 ) -> tuple[pd.DataFrame, pd.DataFrame, dict[str, Any]]:
     x = df.iloc[:, 2:46].to_numpy()
     y = df[TARGET_COLUMN].to_numpy(dtype=float)
@@ -78,7 +81,7 @@ def run_logo_baseline(
         y_train, y_test = y[train_index], y[test_index]
         group_label = str(groups[test_index][0])
 
-        model = _make_model(seed=seed, device=device)
+        model = _make_model(seed=seed, device=device, n_jobs=n_jobs)
         model.fit(x_train, y_train)
         y_pred = model.predict(x_test)
 
@@ -105,7 +108,7 @@ def run_logo_baseline(
 
     fold_metrics = pd.DataFrame(fold_rows)
     prediction_table = pd.concat(predictions, ignore_index=True)
-    summary = summarize_run(fold_metrics, prediction_table, seed=seed, device=device)
+    summary = summarize_run(fold_metrics, prediction_table, seed=seed, device=device, n_jobs=n_jobs)
     return fold_metrics, prediction_table, summary
 
 
@@ -114,6 +117,7 @@ def summarize_run(
     prediction_table: pd.DataFrame,
     seed: int | None,
     device: str,
+    n_jobs: int | None = None,
 ) -> dict[str, Any]:
     xgb_folds = fold_metrics[fold_metrics["model"] == "xgboost_original_params"]
     fold_mean_by_model = {
@@ -155,7 +159,13 @@ def summarize_run(
         "seed_policy": "local deterministic rerun with random_state" if seed is not None else "notebook-like unseeded rerun",
         "seed": seed,
         "device": device,
-        "local_model_params": {**ORIGINAL_5D1_PARAMS, "device": device, **({"random_state": seed} if seed is not None else {})},
+        "n_jobs": n_jobs if n_jobs is not None else "xgboost_default",
+        "local_model_params": {
+            **ORIGINAL_5D1_PARAMS,
+            "device": device,
+            **({"random_state": seed} if seed is not None else {}),
+            **({"n_jobs": n_jobs} if n_jobs is not None else {}),
+        },
         "original_notebook_device": "cuda",
         "original_notebook_seed": "not explicitly set in inspected XGBRegressor definition",
         "notebook_saved_metrics": NOTEBOOK_SAVED_5D1_LOGO_METRICS,

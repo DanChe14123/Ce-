@@ -1,0 +1,675 @@
+{
+  "workbook": "data\\raw\\ce_5d1_prediction\\original\\Training_Set_for_5d1.xlsx",
+  "notebook_saved_metrics": {
+    "avg_mae_eV": 0.15338832561753013,
+    "avg_mse_eV2": 0.04344782809517265,
+    "avg_rmse_eV": 0.15425705564280934,
+    "r2": 0.8380042800908163
+  },
+  "cuda_probe": {
+    "cuda_available": false,
+    "reason": "nvidia-smi returned non-zero"
+  },
+  "run_count_ok": 7,
+  "run_count_total_including_skips": 8,
+  "best_match_by_abs_fold_mae_delta": {
+    "run_id": "cpu_unseeded_default",
+    "status": "ok",
+    "device": "cpu",
+    "n_jobs": "xgboost_default",
+    "seed_policy": "notebook-like unseeded rerun",
+    "seed": "",
+    "elapsed_s": 59.147,
+    "fold_mean_mae_eV": 0.1549934117114905,
+    "fold_mean_mse_eV2": 0.04416122774004402,
+    "fold_mean_rmse_eV": 0.15583398084252154,
+    "fold_mean_mae_nm": 15.546313463825308,
+    "fold_mean_rmse_nm": 15.617569389970441,
+    "global_mae_eV": 0.1544837300223129,
+    "global_rmse_eV": 0.20902288874146235,
+    "global_r2_eV": 0.8355147246024563,
+    "global_mae_nm": 15.536665145919246,
+    "global_rmse_nm": 22.285602859477144,
+    "global_r2_nm": 0.8314458479664559,
+    "delta_vs_notebook_fold_mae_eV": 0.0016050860939603728,
+    "delta_vs_notebook_fold_rmse_eV": 0.001576925199712198,
+    "delta_vs_notebook_r2_global_minus_notebook": -0.0024895554883599402,
+    "skip_reason": NaN
+  },
+  "fold_mae_delta_range_eV": {
+    "min": 0.0016050860939603728,
+    "max": 0.00814666204452516
+  },
+  "all_run_summaries": {
+    "cpu_unseeded_default": {
+      "model": "xgboost_original_params",
+      "release": "NL0119/Ce_5d1_Prediction@original",
+      "split": "LeaveOneGroupOut grouped by Composition",
+      "fold_count": 330,
+      "row_count": 357,
+      "seed_policy": "notebook-like unseeded rerun",
+      "seed": null,
+      "device": "cpu",
+      "n_jobs": "xgboost_default",
+      "local_model_params": {
+        "tree_method": "hist",
+        "n_estimators": 200,
+        "learning_rate": 0.06,
+        "max_depth": 9,
+        "min_child_weight": 8,
+        "subsample": 0.6,
+        "base_score": 0.4,
+        "colsample_bytree": 1,
+        "colsample_bylevel": 1,
+        "colsample_bynode": 1,
+        "reg_alpha": 0,
+        "reg_lambda": 1,
+        "device": "cpu"
+      },
+      "original_notebook_device": "cuda",
+      "original_notebook_seed": "not explicitly set in inspected XGBRegressor definition",
+      "notebook_saved_metrics": {
+        "avg_mae_eV": 0.15338832561753013,
+        "avg_mse_eV2": 0.04344782809517265,
+        "avg_rmse_eV": 0.15425705564280934,
+        "r2": 0.8380042800908163
+      },
+      "fold_mean_metrics": {
+        "avg_mae_eV": 0.1549934117114905,
+        "avg_mse_eV2": 0.04416122774004402,
+        "avg_rmse_eV": 0.15583398084252154,
+        "avg_mae_nm": 15.546313463825308,
+        "avg_rmse_nm": 15.617569389970441
+      },
+      "fold_mean_metrics_by_model": {
+        "train_mean_baseline": {
+          "avg_mae_eV": 0.42116772689472176,
+          "avg_mse_eV2": 0.2745700254953302,
+          "avg_rmse_eV": 0.42284939016341,
+          "avg_mae_nm": 42.24858689930721,
+          "avg_rmse_nm": 42.42454370119407
+        },
+        "train_median_baseline": {
+          "avg_mae_eV": 0.42013484848484844,
+          "avg_mse_eV2": 0.2746643946969697,
+          "avg_rmse_eV": 0.4217848835997225,
+          "avg_mae_nm": 42.14979982915559,
+          "avg_rmse_nm": 42.32495248418207
+        },
+        "xgboost_original_params": {
+          "avg_mae_eV": 0.1549934117114905,
+          "avg_mse_eV2": 0.04416122774004402,
+          "avg_rmse_eV": 0.15583398084252154,
+          "avg_mae_nm": 15.546313463825308,
+          "avg_rmse_nm": 15.617569389970441
+        }
+      },
+      "global_metrics_eV": {
+        "mae_eV": 0.1544837300223129,
+        "mse_eV2": 0.04369056801782575,
+        "rmse_eV": 0.20902288874146235,
+        "r2": 0.8355147246024563
+      },
+      "global_metrics_nm": {
+        "mae_nm": 15.536665145919246,
+        "mse_nm2": 496.64809481033586,
+        "rmse_nm": 22.285602859477144,
+        "r2": 0.8314458479664559
+      },
+      "package_versions": {
+        "python": "3.12.13",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "numpy": "2.4.6",
+        "pandas": "3.0.3",
+        "scikit_learn": "1.8.0",
+        "xgboost": "3.2.0"
+      },
+      "warnings": [
+        "Metrics are from processed workbook features; source DOI/year/in-house groups are absent.",
+        "Predicted CS and Predicted RP are used as frozen released features, not regenerated inside nested CV.",
+        "CPU deterministic rerun may differ from original notebook CUDA/unseeded behavior."
+      ]
+    },
+    "cpu_seed_0_default": {
+      "model": "xgboost_original_params",
+      "release": "NL0119/Ce_5d1_Prediction@original",
+      "split": "LeaveOneGroupOut grouped by Composition",
+      "fold_count": 330,
+      "row_count": 357,
+      "seed_policy": "local deterministic rerun with random_state",
+      "seed": 0,
+      "device": "cpu",
+      "n_jobs": "xgboost_default",
+      "local_model_params": {
+        "tree_method": "hist",
+        "n_estimators": 200,
+        "learning_rate": 0.06,
+        "max_depth": 9,
+        "min_child_weight": 8,
+        "subsample": 0.6,
+        "base_score": 0.4,
+        "colsample_bytree": 1,
+        "colsample_bylevel": 1,
+        "colsample_bynode": 1,
+        "reg_alpha": 0,
+        "reg_lambda": 1,
+        "device": "cpu",
+        "random_state": 0
+      },
+      "original_notebook_device": "cuda",
+      "original_notebook_seed": "not explicitly set in inspected XGBRegressor definition",
+      "notebook_saved_metrics": {
+        "avg_mae_eV": 0.15338832561753013,
+        "avg_mse_eV2": 0.04344782809517265,
+        "avg_rmse_eV": 0.15425705564280934,
+        "r2": 0.8380042800908163
+      },
+      "fold_mean_metrics": {
+        "avg_mae_eV": 0.1549934117114905,
+        "avg_mse_eV2": 0.04416122774004402,
+        "avg_rmse_eV": 0.15583398084252154,
+        "avg_mae_nm": 15.546313463825308,
+        "avg_rmse_nm": 15.617569389970441
+      },
+      "fold_mean_metrics_by_model": {
+        "train_mean_baseline": {
+          "avg_mae_eV": 0.42116772689472176,
+          "avg_mse_eV2": 0.2745700254953302,
+          "avg_rmse_eV": 0.42284939016341,
+          "avg_mae_nm": 42.24858689930721,
+          "avg_rmse_nm": 42.42454370119407
+        },
+        "train_median_baseline": {
+          "avg_mae_eV": 0.42013484848484844,
+          "avg_mse_eV2": 0.2746643946969697,
+          "avg_rmse_eV": 0.4217848835997225,
+          "avg_mae_nm": 42.14979982915559,
+          "avg_rmse_nm": 42.32495248418207
+        },
+        "xgboost_original_params": {
+          "avg_mae_eV": 0.1549934117114905,
+          "avg_mse_eV2": 0.04416122774004402,
+          "avg_rmse_eV": 0.15583398084252154,
+          "avg_mae_nm": 15.546313463825308,
+          "avg_rmse_nm": 15.617569389970441
+        }
+      },
+      "global_metrics_eV": {
+        "mae_eV": 0.1544837300223129,
+        "mse_eV2": 0.04369056801782575,
+        "rmse_eV": 0.20902288874146235,
+        "r2": 0.8355147246024563
+      },
+      "global_metrics_nm": {
+        "mae_nm": 15.536665145919246,
+        "mse_nm2": 496.64809481033586,
+        "rmse_nm": 22.285602859477144,
+        "r2": 0.8314458479664559
+      },
+      "package_versions": {
+        "python": "3.12.13",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "numpy": "2.4.6",
+        "pandas": "3.0.3",
+        "scikit_learn": "1.8.0",
+        "xgboost": "3.2.0"
+      },
+      "warnings": [
+        "Metrics are from processed workbook features; source DOI/year/in-house groups are absent.",
+        "Predicted CS and Predicted RP are used as frozen released features, not regenerated inside nested CV.",
+        "CPU deterministic rerun may differ from original notebook CUDA/unseeded behavior."
+      ]
+    },
+    "cpu_seed_1_default": {
+      "model": "xgboost_original_params",
+      "release": "NL0119/Ce_5d1_Prediction@original",
+      "split": "LeaveOneGroupOut grouped by Composition",
+      "fold_count": 330,
+      "row_count": 357,
+      "seed_policy": "local deterministic rerun with random_state",
+      "seed": 1,
+      "device": "cpu",
+      "n_jobs": "xgboost_default",
+      "local_model_params": {
+        "tree_method": "hist",
+        "n_estimators": 200,
+        "learning_rate": 0.06,
+        "max_depth": 9,
+        "min_child_weight": 8,
+        "subsample": 0.6,
+        "base_score": 0.4,
+        "colsample_bytree": 1,
+        "colsample_bylevel": 1,
+        "colsample_bynode": 1,
+        "reg_alpha": 0,
+        "reg_lambda": 1,
+        "device": "cpu",
+        "random_state": 1
+      },
+      "original_notebook_device": "cuda",
+      "original_notebook_seed": "not explicitly set in inspected XGBRegressor definition",
+      "notebook_saved_metrics": {
+        "avg_mae_eV": 0.15338832561753013,
+        "avg_mse_eV2": 0.04344782809517265,
+        "avg_rmse_eV": 0.15425705564280934,
+        "r2": 0.8380042800908163
+      },
+      "fold_mean_metrics": {
+        "avg_mae_eV": 0.15868260838479709,
+        "avg_mse_eV2": 0.04630460946510447,
+        "avg_rmse_eV": 0.15945084205876886,
+        "avg_mae_nm": 16.155810788087063,
+        "avg_rmse_nm": 16.22366890643463
+      },
+      "fold_mean_metrics_by_model": {
+        "train_mean_baseline": {
+          "avg_mae_eV": 0.42116772689472176,
+          "avg_mse_eV2": 0.2745700254953302,
+          "avg_rmse_eV": 0.42284939016341,
+          "avg_mae_nm": 42.24858689930721,
+          "avg_rmse_nm": 42.42454370119407
+        },
+        "train_median_baseline": {
+          "avg_mae_eV": 0.42013484848484844,
+          "avg_mse_eV2": 0.2746643946969697,
+          "avg_rmse_eV": 0.4217848835997225,
+          "avg_mae_nm": 42.14979982915559,
+          "avg_rmse_nm": 42.32495248418207
+        },
+        "xgboost_original_params": {
+          "avg_mae_eV": 0.15868260838479709,
+          "avg_mse_eV2": 0.04630460946510447,
+          "avg_rmse_eV": 0.15945084205876886,
+          "avg_mae_nm": 16.155810788087063,
+          "avg_rmse_nm": 16.22366890643463
+        }
+      },
+      "global_metrics_eV": {
+        "mae_eV": 0.15870999868911187,
+        "mse_eV2": 0.04597525905870056,
+        "rmse_eV": 0.21441842052095375,
+        "r2": 0.8269133707609758
+      },
+      "global_metrics_nm": {
+        "mae_nm": 16.188393707212608,
+        "mse_nm2": 539.47193867993,
+        "rmse_nm": 23.22653522762123,
+        "r2": 0.8169121433863289
+      },
+      "package_versions": {
+        "python": "3.12.13",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "numpy": "2.4.6",
+        "pandas": "3.0.3",
+        "scikit_learn": "1.8.0",
+        "xgboost": "3.2.0"
+      },
+      "warnings": [
+        "Metrics are from processed workbook features; source DOI/year/in-house groups are absent.",
+        "Predicted CS and Predicted RP are used as frozen released features, not regenerated inside nested CV.",
+        "CPU deterministic rerun may differ from original notebook CUDA/unseeded behavior."
+      ]
+    },
+    "cpu_seed_22_default": {
+      "model": "xgboost_original_params",
+      "release": "NL0119/Ce_5d1_Prediction@original",
+      "split": "LeaveOneGroupOut grouped by Composition",
+      "fold_count": 330,
+      "row_count": 357,
+      "seed_policy": "local deterministic rerun with random_state",
+      "seed": 22,
+      "device": "cpu",
+      "n_jobs": "xgboost_default",
+      "local_model_params": {
+        "tree_method": "hist",
+        "n_estimators": 200,
+        "learning_rate": 0.06,
+        "max_depth": 9,
+        "min_child_weight": 8,
+        "subsample": 0.6,
+        "base_score": 0.4,
+        "colsample_bytree": 1,
+        "colsample_bylevel": 1,
+        "colsample_bynode": 1,
+        "reg_alpha": 0,
+        "reg_lambda": 1,
+        "device": "cpu",
+        "random_state": 22
+      },
+      "original_notebook_device": "cuda",
+      "original_notebook_seed": "not explicitly set in inspected XGBRegressor definition",
+      "notebook_saved_metrics": {
+        "avg_mae_eV": 0.15338832561753013,
+        "avg_mse_eV2": 0.04344782809517265,
+        "avg_rmse_eV": 0.15425705564280934,
+        "r2": 0.8380042800908163
+      },
+      "fold_mean_metrics": {
+        "avg_mae_eV": 0.16137913856650843,
+        "avg_mse_eV2": 0.04568269485197903,
+        "avg_rmse_eV": 0.16212499925099544,
+        "avg_mae_nm": 16.292703727287897,
+        "avg_rmse_nm": 16.361829680650004
+      },
+      "fold_mean_metrics_by_model": {
+        "train_mean_baseline": {
+          "avg_mae_eV": 0.42116772689472176,
+          "avg_mse_eV2": 0.2745700254953302,
+          "avg_rmse_eV": 0.42284939016341,
+          "avg_mae_nm": 42.24858689930721,
+          "avg_rmse_nm": 42.42454370119407
+        },
+        "train_median_baseline": {
+          "avg_mae_eV": 0.42013484848484844,
+          "avg_mse_eV2": 0.2746643946969697,
+          "avg_rmse_eV": 0.4217848835997225,
+          "avg_mae_nm": 42.14979982915559,
+          "avg_rmse_nm": 42.32495248418207
+        },
+        "xgboost_original_params": {
+          "avg_mae_eV": 0.16137913856650843,
+          "avg_mse_eV2": 0.04568269485197903,
+          "avg_rmse_eV": 0.16212499925099544,
+          "avg_mae_nm": 16.292703727287897,
+          "avg_rmse_nm": 16.361829680650004
+        }
+      },
+      "global_metrics_eV": {
+        "mae_eV": 0.1616886125398951,
+        "mse_eV2": 0.045280591592705186,
+        "rmse_eV": 0.21279236732717927,
+        "r2": 0.8295286393335277
+      },
+      "global_metrics_nm": {
+        "mae_nm": 16.336499126470482,
+        "mse_nm2": 514.3568437035625,
+        "rmse_nm": 22.679436582586494,
+        "r2": 0.825435791380187
+      },
+      "package_versions": {
+        "python": "3.12.13",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "numpy": "2.4.6",
+        "pandas": "3.0.3",
+        "scikit_learn": "1.8.0",
+        "xgboost": "3.2.0"
+      },
+      "warnings": [
+        "Metrics are from processed workbook features; source DOI/year/in-house groups are absent.",
+        "Predicted CS and Predicted RP are used as frozen released features, not regenerated inside nested CV.",
+        "CPU deterministic rerun may differ from original notebook CUDA/unseeded behavior."
+      ]
+    },
+    "cpu_seed_42_default": {
+      "model": "xgboost_original_params",
+      "release": "NL0119/Ce_5d1_Prediction@original",
+      "split": "LeaveOneGroupOut grouped by Composition",
+      "fold_count": 330,
+      "row_count": 357,
+      "seed_policy": "local deterministic rerun with random_state",
+      "seed": 42,
+      "device": "cpu",
+      "n_jobs": "xgboost_default",
+      "local_model_params": {
+        "tree_method": "hist",
+        "n_estimators": 200,
+        "learning_rate": 0.06,
+        "max_depth": 9,
+        "min_child_weight": 8,
+        "subsample": 0.6,
+        "base_score": 0.4,
+        "colsample_bytree": 1,
+        "colsample_bylevel": 1,
+        "colsample_bynode": 1,
+        "reg_alpha": 0,
+        "reg_lambda": 1,
+        "device": "cpu",
+        "random_state": 42
+      },
+      "original_notebook_device": "cuda",
+      "original_notebook_seed": "not explicitly set in inspected XGBRegressor definition",
+      "notebook_saved_metrics": {
+        "avg_mae_eV": 0.15338832561753013,
+        "avg_mse_eV2": 0.04344782809517265,
+        "avg_rmse_eV": 0.15425705564280934,
+        "r2": 0.8380042800908163
+      },
+      "fold_mean_metrics": {
+        "avg_mae_eV": 0.1615349876620553,
+        "avg_mse_eV2": 0.046864670340503116,
+        "avg_rmse_eV": 0.16245230476530725,
+        "avg_mae_nm": 16.315180810856024,
+        "avg_rmse_nm": 16.390102325509496
+      },
+      "fold_mean_metrics_by_model": {
+        "train_mean_baseline": {
+          "avg_mae_eV": 0.42116772689472176,
+          "avg_mse_eV2": 0.2745700254953302,
+          "avg_rmse_eV": 0.42284939016341,
+          "avg_mae_nm": 42.24858689930721,
+          "avg_rmse_nm": 42.42454370119407
+        },
+        "train_median_baseline": {
+          "avg_mae_eV": 0.42013484848484844,
+          "avg_mse_eV2": 0.2746643946969697,
+          "avg_rmse_eV": 0.4217848835997225,
+          "avg_mae_nm": 42.14979982915559,
+          "avg_rmse_nm": 42.32495248418207
+        },
+        "xgboost_original_params": {
+          "avg_mae_eV": 0.1615349876620553,
+          "avg_mse_eV2": 0.046864670340503116,
+          "avg_rmse_eV": 0.16245230476530725,
+          "avg_mae_nm": 16.315180810856024,
+          "avg_rmse_nm": 16.390102325509496
+        }
+      },
+      "global_metrics_eV": {
+        "mae_eV": 0.16083551934720422,
+        "mse_eV2": 0.046088847127590926,
+        "rmse_eV": 0.2146831319121065,
+        "r2": 0.8264857369342495
+      },
+      "global_metrics_nm": {
+        "mae_nm": 16.28117847941098,
+        "mse_nm2": 526.0851788567757,
+        "rmse_nm": 22.936546794510626,
+        "r2": 0.8214553883399418
+      },
+      "package_versions": {
+        "python": "3.12.13",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "numpy": "2.4.6",
+        "pandas": "3.0.3",
+        "scikit_learn": "1.8.0",
+        "xgboost": "3.2.0"
+      },
+      "warnings": [
+        "Metrics are from processed workbook features; source DOI/year/in-house groups are absent.",
+        "Predicted CS and Predicted RP are used as frozen released features, not regenerated inside nested CV.",
+        "CPU deterministic rerun may differ from original notebook CUDA/unseeded behavior."
+      ]
+    },
+    "cpu_seed_100_default": {
+      "model": "xgboost_original_params",
+      "release": "NL0119/Ce_5d1_Prediction@original",
+      "split": "LeaveOneGroupOut grouped by Composition",
+      "fold_count": 330,
+      "row_count": 357,
+      "seed_policy": "local deterministic rerun with random_state",
+      "seed": 100,
+      "device": "cpu",
+      "n_jobs": "xgboost_default",
+      "local_model_params": {
+        "tree_method": "hist",
+        "n_estimators": 200,
+        "learning_rate": 0.06,
+        "max_depth": 9,
+        "min_child_weight": 8,
+        "subsample": 0.6,
+        "base_score": 0.4,
+        "colsample_bytree": 1,
+        "colsample_bylevel": 1,
+        "colsample_bynode": 1,
+        "reg_alpha": 0,
+        "reg_lambda": 1,
+        "device": "cpu",
+        "random_state": 100
+      },
+      "original_notebook_device": "cuda",
+      "original_notebook_seed": "not explicitly set in inspected XGBRegressor definition",
+      "notebook_saved_metrics": {
+        "avg_mae_eV": 0.15338832561753013,
+        "avg_mse_eV2": 0.04344782809517265,
+        "avg_rmse_eV": 0.15425705564280934,
+        "r2": 0.8380042800908163
+      },
+      "fold_mean_metrics": {
+        "avg_mae_eV": 0.15660183148673087,
+        "avg_mse_eV2": 0.04564026088875571,
+        "avg_rmse_eV": 0.15748760739265072,
+        "avg_mae_nm": 15.787649936756006,
+        "avg_rmse_nm": 15.861797049364794
+      },
+      "fold_mean_metrics_by_model": {
+        "train_mean_baseline": {
+          "avg_mae_eV": 0.42116772689472176,
+          "avg_mse_eV2": 0.2745700254953302,
+          "avg_rmse_eV": 0.42284939016341,
+          "avg_mae_nm": 42.24858689930721,
+          "avg_rmse_nm": 42.42454370119407
+        },
+        "train_median_baseline": {
+          "avg_mae_eV": 0.42013484848484844,
+          "avg_mse_eV2": 0.2746643946969697,
+          "avg_rmse_eV": 0.4217848835997225,
+          "avg_mae_nm": 42.14979982915559,
+          "avg_rmse_nm": 42.32495248418207
+        },
+        "xgboost_original_params": {
+          "avg_mae_eV": 0.15660183148673087,
+          "avg_mse_eV2": 0.04564026088875571,
+          "avg_rmse_eV": 0.15748760739265072,
+          "avg_mae_nm": 15.787649936756006,
+          "avg_rmse_nm": 15.861797049364794
+        }
+      },
+      "global_metrics_eV": {
+        "mae_eV": 0.15625957639143917,
+        "mse_eV2": 0.04513879013555409,
+        "rmse_eV": 0.21245891399410402,
+        "r2": 0.8300624902947182
+      },
+      "global_metrics_nm": {
+        "mae_nm": 15.787478694678965,
+        "mse_nm2": 510.9174607611995,
+        "rmse_nm": 22.60348337670987,
+        "r2": 0.8266030610856915
+      },
+      "package_versions": {
+        "python": "3.12.13",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "numpy": "2.4.6",
+        "pandas": "3.0.3",
+        "scikit_learn": "1.8.0",
+        "xgboost": "3.2.0"
+      },
+      "warnings": [
+        "Metrics are from processed workbook features; source DOI/year/in-house groups are absent.",
+        "Predicted CS and Predicted RP are used as frozen released features, not regenerated inside nested CV.",
+        "CPU deterministic rerun may differ from original notebook CUDA/unseeded behavior."
+      ]
+    },
+    "cpu_seed_42_n_jobs_1": {
+      "model": "xgboost_original_params",
+      "release": "NL0119/Ce_5d1_Prediction@original",
+      "split": "LeaveOneGroupOut grouped by Composition",
+      "fold_count": 330,
+      "row_count": 357,
+      "seed_policy": "local deterministic rerun with random_state",
+      "seed": 42,
+      "device": "cpu",
+      "n_jobs": 1,
+      "local_model_params": {
+        "tree_method": "hist",
+        "n_estimators": 200,
+        "learning_rate": 0.06,
+        "max_depth": 9,
+        "min_child_weight": 8,
+        "subsample": 0.6,
+        "base_score": 0.4,
+        "colsample_bytree": 1,
+        "colsample_bylevel": 1,
+        "colsample_bynode": 1,
+        "reg_alpha": 0,
+        "reg_lambda": 1,
+        "device": "cpu",
+        "random_state": 42,
+        "n_jobs": 1
+      },
+      "original_notebook_device": "cuda",
+      "original_notebook_seed": "not explicitly set in inspected XGBRegressor definition",
+      "notebook_saved_metrics": {
+        "avg_mae_eV": 0.15338832561753013,
+        "avg_mse_eV2": 0.04344782809517265,
+        "avg_rmse_eV": 0.15425705564280934,
+        "r2": 0.8380042800908163
+      },
+      "fold_mean_metrics": {
+        "avg_mae_eV": 0.159380745010665,
+        "avg_mse_eV2": 0.04650870833195326,
+        "avg_rmse_eV": 0.1602286959741412,
+        "avg_mae_nm": 16.01831651671151,
+        "avg_rmse_nm": 16.091180077255057
+      },
+      "fold_mean_metrics_by_model": {
+        "train_mean_baseline": {
+          "avg_mae_eV": 0.42116772689472176,
+          "avg_mse_eV2": 0.2745700254953302,
+          "avg_rmse_eV": 0.42284939016341,
+          "avg_mae_nm": 42.24858689930721,
+          "avg_rmse_nm": 42.42454370119407
+        },
+        "train_median_baseline": {
+          "avg_mae_eV": 0.42013484848484844,
+          "avg_mse_eV2": 0.2746643946969697,
+          "avg_rmse_eV": 0.4217848835997225,
+          "avg_mae_nm": 42.14979982915559,
+          "avg_rmse_nm": 42.32495248418207
+        },
+        "xgboost_original_params": {
+          "avg_mae_eV": 0.159380745010665,
+          "avg_mse_eV2": 0.04650870833195326,
+          "avg_rmse_eV": 0.1602286959741412,
+          "avg_mae_nm": 16.01831651671151,
+          "avg_rmse_nm": 16.091180077255057
+        }
+      },
+      "global_metrics_eV": {
+        "mae_eV": 0.15926362384400783,
+        "mse_eV2": 0.04602032945100241,
+        "rmse_eV": 0.21452349393714995,
+        "r2": 0.8267436907539083
+      },
+      "global_metrics_nm": {
+        "mae_nm": 16.044795869109173,
+        "mse_nm2": 524.6353941113978,
+        "rmse_nm": 22.90492074012477,
+        "r2": 0.8219474213124667
+      },
+      "package_versions": {
+        "python": "3.12.13",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "numpy": "2.4.6",
+        "pandas": "3.0.3",
+        "scikit_learn": "1.8.0",
+        "xgboost": "3.2.0"
+      },
+      "warnings": [
+        "Metrics are from processed workbook features; source DOI/year/in-house groups are absent.",
+        "Predicted CS and Predicted RP are used as frozen released features, not regenerated inside nested CV.",
+        "CPU deterministic rerun may differ from original notebook CUDA/unseeded behavior."
+      ]
+    }
+  }
+}
