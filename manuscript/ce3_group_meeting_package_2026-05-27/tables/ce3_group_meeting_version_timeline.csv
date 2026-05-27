@@ -1,0 +1,7 @@
+stage_order,source_node,date_label,evidence_category,claim,source_artifact,caveat
+1,arXiv:2502.18859,2025-02,Literature Fact,Paper/source materials for Ce3+ 5d1 prediction were verified.,notes/source-audit-ce3-excitation-band-baseline.md,Month follows arXiv identifier; this package does not use a precise posting day.
+2,MRS 2025 abstract,2025,Literature Fact,Conference material was checked as source context.,notes/source-audit-ce3-excitation-band-baseline.md,Conference abstract claims are not treated as verified experimental facts.
+3,Zenodo/DataCite,2025-02-14,Literature Fact,DOI metadata issued for version original and points to GitHub tree/original.,notes/zenodo-github-version-audit.md,Direct Zenodo payload checksums remain unavailable locally due to HTTP 403.
+4,GitHub original tag,2025-02-12,Literature Fact,Original tag contains the 357-row `Training_Set_for_5d1.xlsx` workbook.,notes/zenodo-github-version-audit.md,"Paper-aligned processed workbook, not raw literature reconstruction."
+5,BrgochGroup main fork,2026-03-13,Literature Fact,Later public fork contains a non-identical 358-row workbook.,notes/zenodo-github-version-audit.md;notes/modeling-code-audit-ce3-excitation-band-baseline.md,Metrics from later main must not be mixed with original-release metrics.
+6,Local reproduction audits,2026-05-22/23,Model Inference,Original baseline rerun and metric-gap audit completed locally.,reproductions/ce3_original_baseline/report.md;reproductions/ce3_original_metric_gap/report.md,CUDA comparison remains skipped locally.

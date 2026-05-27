@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+<style>
+text{font-family:'Segoe UI','Microsoft YaHei',Arial,sans-serif;fill:#17212b}
+.title{font-size:34px;font-weight:700}
+.subtitle{font-size:18px;fill:#4b5563}
+.small{font-size:15px;fill:#4b5563}
+.label{font-size:18px;font-weight:650}
+.metric{font-size:26px;font-weight:700}
+</style>
+<rect x="0" y="0" width="1280" height="720" fill="#fbfaf6"/>
+<text x="70.0" y="70.0" class="title" text-anchor="start">Source and version audit timeline</text>
+<text x="70.0" y="102.0" class="subtitle" text-anchor="start">DataCite/GitHub evidence separates the 357-row original release from the later 358-row workbook.</text>
+<line x1="95" y1="310" x2="1145" y2="310" stroke="#8aa0a9" stroke-width="4"/>
+<circle cx="95" cy="310" r="23" fill="#1f7a8c"/>
+<text x="95.0" y="317.0" class="label" text-anchor="middle">1</text>
+<text x="95.0" y="250.0" class="label" text-anchor="middle">2025-02</text>
+<text x="17.0" y="365.0" class="label" text-anchor="start">arXiv:2502.18859</text>
+<text x="5.0" y="428.0" class="small" text-anchor="start">Paper/source materials for</text>
+<text x="5.0" y="447.0" class="small" text-anchor="start">Ce3+ 5d1 prediction were</text>
+<text x="5.0" y="466.0" class="small" text-anchor="start">verified.</text>
+<circle cx="305" cy="310" r="23" fill="#1f7a8c"/>
+<text x="305.0" y="317.0" class="label" text-anchor="middle">2</text>
+<text x="305.0" y="250.0" class="label" text-anchor="middle">2025</text>
+<text x="227.0" y="365.0" class="label" text-anchor="start">MRS 2025 abstract</text>
+<text x="215.0" y="428.0" class="small" text-anchor="start">Conference material was</text>
+<text x="215.0" y="447.0" class="small" text-anchor="start">checked as source context.</text>
+<circle cx="515" cy="310" r="23" fill="#1f7a8c"/>
+<text x="515.0" y="317.0" class="label" text-anchor="middle">3</text>
+<text x="515.0" y="250.0" class="label" text-anchor="middle">2025-02-14</text>
+<text x="437.0" y="365.0" class="label" text-anchor="start">Zenodo/DataCite</text>
+<text x="425.0" y="428.0" class="small" text-anchor="start">DOI metadata issued for</text>
+<text x="425.0" y="447.0" class="small" text-anchor="start">version original and points</text>
+<text x="425.0" y="466.0" class="small" text-anchor="start">to GitHub tree/original.</text>
+<circle cx="725" cy="310" r="23" fill="#1f7a8c"/>
+<text x="725.0" y="317.0" class="label" text-anchor="middle">4</text>
+<text x="725.0" y="250.0" class="label" text-anchor="middle">2025-02-12</text>
+<text x="647.0" y="365.0" class="label" text-anchor="start">GitHub original</text>
+<text x="647.0" y="387.0" class="label" text-anchor="start">tag</text>
+<text x="635.0" y="428.0" class="small" text-anchor="start">Original tag contains the</text>
+<text x="635.0" y="447.0" class="small" text-anchor="start">357-row</text>
+<text x="635.0" y="466.0" class="small" text-anchor="start">`Training_Set_for_5d1.xlsx`</text>
+<text x="635.0" y="485.0" class="small" text-anchor="start">workbook.</text>
+<circle cx="935" cy="310" r="23" fill="#d68c2f"/>
+<text x="935.0" y="317.0" class="label" text-anchor="middle">5</text>
+<text x="935.0" y="250.0" class="label" text-anchor="middle">2026-03-13</text>
+<text x="857.0" y="365.0" class="label" text-anchor="start">BrgochGroup main</text>
+<text x="857.0" y="387.0" class="label" text-anchor="start">fork</text>
+<text x="845.0" y="428.0" class="small" text-anchor="start">Later public fork contains a</text>
+<text x="845.0" y="447.0" class="small" text-anchor="start">non-identical 358-row</text>
+<text x="845.0" y="466.0" class="small" text-anchor="start">workbook.</text>
+<circle cx="1145" cy="310" r="23" fill="#d68c2f"/>
+<text x="1145.0" y="317.0" class="label" text-anchor="middle">6</text>
+<text x="1145.0" y="250.0" class="label" text-anchor="middle">2026-05-22/23</text>
+<text x="1067.0" y="365.0" class="label" text-anchor="start">Local reproduction</text>
+<text x="1067.0" y="387.0" class="label" text-anchor="start">audits</text>
+<text x="1055.0" y="428.0" class="small" text-anchor="start">Original baseline rerun and</text>
+<text x="1055.0" y="447.0" class="small" text-anchor="start">metric-gap audit completed</text>
+<text x="1055.0" y="466.0" class="small" text-anchor="start">locally.</text>
+<text x="70.0" y="650.0" class="small" text-anchor="start">Caveat: Zenodo payload checksums remain unverified locally because direct routes returned HTTP 403.</text>
+</svg>

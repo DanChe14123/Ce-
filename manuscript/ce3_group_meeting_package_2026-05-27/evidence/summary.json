@@ -1,0 +1,89 @@
+{
+  "model": "xgboost_original_params",
+  "release": "NL0119/Ce_5d1_Prediction@original",
+  "split": "LeaveOneGroupOut grouped by Composition",
+  "fold_count": 330,
+  "row_count": 357,
+  "seed_policy": "local deterministic rerun with random_state",
+  "seed": 42,
+  "device": "cpu",
+  "local_model_params": {
+    "tree_method": "hist",
+    "n_estimators": 200,
+    "learning_rate": 0.06,
+    "max_depth": 9,
+    "min_child_weight": 8,
+    "subsample": 0.6,
+    "base_score": 0.4,
+    "colsample_bytree": 1,
+    "colsample_bylevel": 1,
+    "colsample_bynode": 1,
+    "reg_alpha": 0,
+    "reg_lambda": 1,
+    "device": "cpu",
+    "random_state": 42
+  },
+  "original_notebook_device": "cuda",
+  "original_notebook_seed": "not explicitly set in inspected XGBRegressor definition",
+  "notebook_saved_metrics": {
+    "avg_mae_eV": 0.15338832561753013,
+    "avg_mse_eV2": 0.04344782809517265,
+    "avg_rmse_eV": 0.15425705564280934,
+    "r2": 0.8380042800908163
+  },
+  "fold_mean_metrics": {
+    "avg_mae_eV": 0.1615349876620553,
+    "avg_mse_eV2": 0.046864670340503116,
+    "avg_rmse_eV": 0.16245230476530725,
+    "avg_mae_nm": 16.315180810856024,
+    "avg_rmse_nm": 16.390102325509496
+  },
+  "fold_mean_metrics_by_model": {
+    "train_mean_baseline": {
+      "avg_mae_eV": 0.42116772689472176,
+      "avg_mse_eV2": 0.2745700254953302,
+      "avg_rmse_eV": 0.42284939016341,
+      "avg_mae_nm": 42.24858689930721,
+      "avg_rmse_nm": 42.42454370119407
+    },
+    "train_median_baseline": {
+      "avg_mae_eV": 0.42013484848484844,
+      "avg_mse_eV2": 0.2746643946969697,
+      "avg_rmse_eV": 0.4217848835997225,
+      "avg_mae_nm": 42.14979982915559,
+      "avg_rmse_nm": 42.32495248418207
+    },
+    "xgboost_original_params": {
+      "avg_mae_eV": 0.1615349876620553,
+      "avg_mse_eV2": 0.046864670340503116,
+      "avg_rmse_eV": 0.16245230476530725,
+      "avg_mae_nm": 16.315180810856024,
+      "avg_rmse_nm": 16.390102325509496
+    }
+  },
+  "global_metrics_eV": {
+    "mae_eV": 0.16083551934720422,
+    "mse_eV2": 0.046088847127590926,
+    "rmse_eV": 0.2146831319121065,
+    "r2": 0.8264857369342495
+  },
+  "global_metrics_nm": {
+    "mae_nm": 16.28117847941098,
+    "mse_nm2": 526.0851788567757,
+    "rmse_nm": 22.936546794510626,
+    "r2": 0.8214553883399418
+  },
+  "package_versions": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "scikit_learn": "1.8.0",
+    "xgboost": "3.2.0"
+  },
+  "warnings": [
+    "Metrics are from processed workbook features; source DOI/year/in-house groups are absent.",
+    "Predicted CS and Predicted RP are used as frozen released features, not regenerated inside nested CV.",
+    "CPU deterministic rerun may differ from original notebook CUDA/unseeded behavior."
+  ]
+}

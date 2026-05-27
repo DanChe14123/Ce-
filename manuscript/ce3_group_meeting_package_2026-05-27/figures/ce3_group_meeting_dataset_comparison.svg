@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+<style>
+text{font-family:'Segoe UI','Microsoft YaHei',Arial,sans-serif;fill:#17212b}
+.title{font-size:34px;font-weight:700}
+.subtitle{font-size:18px;fill:#4b5563}
+.small{font-size:15px;fill:#4b5563}
+.label{font-size:18px;font-weight:650}
+.metric{font-size:26px;font-weight:700}
+</style>
+<rect x="0" y="0" width="1280" height="720" fill="#fbfaf6"/>
+<text x="70.0" y="70.0" class="title" text-anchor="start">Dataset version boundary</text>
+<text x="70.0" y="102.0" class="subtitle" text-anchor="start">The 357-row original workbook is the paper-aligned target; the 358-row main workbook is a later public update.</text>
+<rect x="80" y="170" width="510" height="360" rx="10" fill="#e8f2f4" stroke="#c9d3d8" stroke-width="2"/>
+<text x="112.0" y="224.0" class="label" text-anchor="start">NL0119/Ce_5d1_Prediction@original</text>
+<text x="112.0" y="295.0" class="small" text-anchor="start">paper-aligned reproduction object</text>
+<text x="112.0" y="360.0" class="metric" text-anchor="start">357 rows x 46 columns</text>
+<text x="112.0" y="405.0" class="label" text-anchor="start">features: 44; unique compositions: 330</text>
+<text x="112.0" y="460.0" class="label" text-anchor="start">use for original baseline metrics</text>
+<text x="112.0" y="505.0" class="small" text-anchor="start">Processed workbook lacks row-level DOI/year/source/in-</text>
+<text x="112.0" y="525.0" class="small" text-anchor="start">house fields.</text>
+<rect x="690" y="170" width="510" height="360" rx="10" fill="#fff2df" stroke="#c9d3d8" stroke-width="2"/>
+<text x="722.0" y="224.0" class="label" text-anchor="start">BrgochGroup/Ce_5d1_Prediction@main</text>
+<text x="722.0" y="295.0" class="small" text-anchor="start">later public workbook for comparison only</text>
+<text x="722.0" y="360.0" class="metric" text-anchor="start">358 rows x 19 columns</text>
+<text x="722.0" y="405.0" class="label" text-anchor="start">features: 17; unique compositions: 330</text>
+<text x="722.0" y="460.0" class="label" text-anchor="start">do not mix with original metrics</text>
+<text x="722.0" y="505.0" class="small" text-anchor="start">Main notebook has a 5d1 `CS_model`/`best_model`</text>
+<text x="722.0" y="525.0" class="small" text-anchor="start">variable mismatch risk.</text>
+<path d="M590 350 L690 350" stroke="#17212b" stroke-width="3" stroke-dasharray="10 8"/>
+<text x="640.0" y="332.0" class="label" text-anchor="middle">do not mix metrics</text>
+<text x="70.0" y="650.0" class="small" text-anchor="start">Source: notes/zenodo-github-version-audit.md; notes/modeling-code-audit-ce3-excitation-band-baseline.md</text>
+</svg>
